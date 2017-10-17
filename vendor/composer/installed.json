@@ -3399,5 +3399,56 @@
             }
         ],
         "description": "BDD code blocks for PHPUnit and Codeception"
+    },
+    {
+        "name": "yiisoft/yii2-mongodb",
+        "version": "2.1.4",
+        "version_normalized": "2.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-mongodb.git",
+            "reference": "ec67acfdfe104dd83055c6e43606cfb80265a588"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-mongodb/zipball/ec67acfdfe104dd83055c6e43606cfb80265a588",
+            "reference": "ec67acfdfe104dd83055c6e43606cfb80265a588",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mongodb": ">=1.0.0",
+            "yiisoft/yii2": "~2.0.5"
+        },
+        "time": "2017-06-23T09:29:41+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\mongodb\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com"
+            }
+        ],
+        "description": "MongoDB extension for the Yii framework",
+        "keywords": [
+            "GridFS",
+            "active-record",
+            "mongo",
+            "mongodb",
+            "yii2"
+        ]
     }
 ]
