@@ -1,0 +1,13 @@
+/Backups/
+/Cache/
+/CachedData/
+Cookies
+Cookies-journal
+/GPUCache/
+/Local Storage/
+Preferences
+machineid
+storage.json
+build.sh~
+mongodb-1.2.5.tgz
+/mongodb-1.2.5/

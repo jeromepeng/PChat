@@ -7,6 +7,10 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'controllerMap'=>[  
+        'api'=>[  
+            'class'=>'app\controllers\auth\BaseAuthController'  
+    ]],  
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -47,6 +51,19 @@ $config = [
             ],
         ],
         */
+        'mongodb' => [
+            'class' => '\yii\mongodb\Connection',
+            'dsn' => 'mongodb://llaiaipp:abc123_@127.0.0.1:27017/admin',
+        ],
+        'urlManager'=>[
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules'=>[
+                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
+            ],
+        ]
     ],
     'params' => $params,
 ];
