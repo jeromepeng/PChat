@@ -9,3 +9,5 @@ Preferences
 machineid
 storage.json
 build.sh~
+mongodb-1.2.5.tgz
+/mongodb-1.2.5/
