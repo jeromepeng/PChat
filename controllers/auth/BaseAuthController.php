@@ -7,15 +7,18 @@
  */  
   
 namespace app\controllers\auth;  
+
+use app\controllers\BaseController;
+use app\models\auth\BaseAuth;
+use Yii;
   
-  
-use yii\web\Controller;  
-  
-class BaseAuthController extends Controller
-{    
-    public function actionTest()
+class BaseAuthController extends BaseController
+{   
+    public function actionAuth()
     {  
-        return "test";
+        $baseAuth = new BaseAuth();
+        $baseAuth->username = 'llaiaipp';
+        $baseAuth->password = '123';
+        return $baseAuth->oneInfo();
     }  
-  
 }  
