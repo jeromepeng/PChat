@@ -7,7 +7,7 @@
  */  
   
 namespace app\controllers\auth;  
-  
+
 use app\controllers\BaseController;
 use app\models\auth\BaseAuth;
 use Yii;
